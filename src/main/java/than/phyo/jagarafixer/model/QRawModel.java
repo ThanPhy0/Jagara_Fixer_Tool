@@ -1,21 +1,19 @@
-package than.phyo.jagarafixer;
-
-import javafx.beans.property.StringProperty;
+package than.phyo.jagarafixer.model;
 
 public class QRawModel {
 	private String fileName;
 	private String label;
-	private String  sizeKB;
 	private String  startByte;
 	private String  startSec;
+	private String  sizeKB;
 
-	public QRawModel(String fileName, String label, String sizeKB, String startByte, String startSec) {
+	public QRawModel(String fileName, String label, String startByte, String startSec, String sizeKB) {
 		super();
 		this.fileName = fileName;
 		this.label = label;
-		this.sizeKB = sizeKB;
 		this.startByte = startByte;
 		this.startSec = startSec;
+		this.sizeKB = sizeKB;
 	}
 
 	public String getFileName() {
